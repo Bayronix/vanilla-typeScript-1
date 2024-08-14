@@ -113,3 +113,83 @@
 // }
 
 // console.log(isEven(4));
+
+// //////////
+// 1
+// function factorial(num: number): number {
+//   if (num < 0) return -1;
+//   if (num === 0 || num === 1) return 1;
+//   let sum: number = 1;
+//   for (let i = 2; i <= num; i++) {
+//     sum *= i;
+//   }
+//   return sum;
+// }
+
+// console.log(factorial(6));
+// 2
+// class Point {
+//   x1: number;
+//   y1: number;
+//   x2: number;
+//   y2: number;
+
+//   constructor(x1: number, y1: number, x2: number, y2: number) {
+//     this.x1 = x1;
+//     this.y1 = y1;
+//     this.x2 = x2;
+//     this.y2 = y2;
+//   }
+//   distance(): number {
+//     return Math.sqrt((this.x2 - this.x1) ** 2 + (this.y2 - this.y1) ** 2);
+//   }
+// }
+// const point = new Point(4, 5, 2, 1);
+// console.log(point.distance());
+
+// class Point {
+//   constructor(public x: number, public y: number) {}
+
+//   distanceTo(other: Point): number {
+//     const dx = this.x - other.x;
+//     const dy = this.y - other.y;
+//     return Math.sqrt(dx * dx + dy * dy);
+//   }
+// }
+
+// const point1 = new Point(4, 5);
+// const point2 = new Point(2, 1);
+
+// console.log(point1.distanceTo(point2));
+
+// 3
+
+// function palindrome(str: string): boolean {
+//   const palindromeStr = str.replace(/\s+/g, "").toLowerCase();
+//   return palindromeStr === palindromeStr.split("").reverse().join("");
+// }
+
+// console.log(palindrome("lol"));
+
+// 4 Завдання
+// interface User {
+//   name: string;
+//   email: string;
+//   age: number;
+// }
+
+// const massive: User[] = [
+//   { name: "cat", email: "cat@gmail.com", age: 20 },
+//   { name: "vasia", email: "egeg@gmail.com", age: 18 },
+//   { name: "afe", email: "qeqe@gmail.com", age: 16 },
+// ];
+
+// function age(user: User): string {
+//   if (user.age < 18) {
+//     return `${JSON.stringify(user)} - "В доступі відмовлено"`;
+//   } else {
+//     return `${JSON.stringify(user)} - "Доступ Дозволено"`;
+//   }
+// }
+
+// massive.forEach((user) => console.log(age(user)));
