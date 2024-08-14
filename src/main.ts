@@ -65,13 +65,51 @@
 
 // console.log(reverseArray());
 
-let array: number[] = [1, 2, 3, 4, 5, 6, 7, 8];
-function filterEvenNumbers() {
-  return array.filter(filterActiom);
-}
+// let array: number[] = [1, 2, 3, 4, 5, 6, 7, 8];
+// function filterEvenNumbers() {
+//   return array.filter(filterActiom);
+// }
 
-function filterActiom(num: number): boolean {
-  return num % 2 === 0;
-}
+// function filterActiom(num: number): boolean {
+//   return num % 2 === 0;
+// }
 
-console.log(filterEvenNumbers());
+// console.log(filterEvenNumbers());
+
+// type typeScript = {
+//   name: string;
+//   number: number;
+// };
+
+// let user: typeScript[] = [
+//   { name: "Tom", number: 20 },
+//   { name: "Jake", number: 24 },
+//   { name: "Anders", number: 10 },
+// ];
+
+// console.log(user);
+
+// type typeGreet = {
+//   name: string;
+//   age: number;
+// };
+
+// function cat(person: typeGreet): string {
+//   const message = `Hello, my name is ${person.name} and I am ${person.age} years old.`;
+//   console.log(message);
+//   return message;
+// }
+
+// cat({ name: "cat", age: 20 });
+
+// function greeting(name: string, age: 20): string {
+//   return `Hello, my name is ${name} and I am ${age} years old.`;
+// }
+
+// console.log(greeting("cat", 20));
+
+// function isEven(num: number): boolean {
+//   return num % 2 === 0;
+// }
+
+// console.log(isEven(4));
